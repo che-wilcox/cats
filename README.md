@@ -1,13 +1,20 @@
 # Cat Farm
 
-##Get All Cats
+## Get All Cats
+
 > Purpose: Returns a list of all cats
+>
 > Resource URL: https://www.catfarm.com/api/cats
+>
 > Parameters: None
+
 > Returns: List of cats
 
-Example Request Endpoint: GET https://www.catfarm.com/api/cats
-JSON Body: N/A
+Example Request Endpoint: 
+
+- GET https://www.catfarm.com/api/cats
+
+- JSON Body: N/A
 
 Example Response:
 ```
@@ -27,15 +34,21 @@ Example Response:
 	]
 ```
 
-##Get Cat by ID
+## Get Cat by ID
+
 > Purpose: Returns details about a single cat and its feeding history
+>
 > Resource URL: https://www.catfarm.com/api/cat/{ID}
+>
 > Parameters: The cat ID is specified in the URL
+
 > Returns: Cat details and list of food
 
-Example Request Endpoint: GET https://www.catfarm.com/api/cat/1
-JSON Body: N/A
-	
+- Example Request Endpoint: GET https://www.catfarm.com/api/cat/1
+
+- JSON Body: N/A
+
+
 Example Response:
 ```
 {
@@ -68,18 +81,26 @@ Example Response:
 }
 ```
 
-##Add Cat
+## Add Cat
+
 > Purpose: Create a Cat Record
+>
 > Resource URL: https://www.catfarm.com/api/cat
+>
 > Parameters: 
+>
 >   name: "name"
+>
 >   type: string
+>
 >   required: YES
-	 
+
 > Returns: Cat details
 
-Example Request Endpoint: POST https://www.catfarm.com/api/cat
-JSON Body:
+- Example Request Endpoint: POST https://www.catfarm.com/api/cat
+
+- JSON Body:
+
 ```
 	{
 	   "name": "Abby"
@@ -98,25 +119,33 @@ Example Response:
 	]
 ```
 
-##Delete Cat
+## Delete Cat
+
 > Purpose: Remove a Cat Record
+>
 > Resource URL: https://www.catfarm.com/api/cat/{ID}
+>
 > Parameters: The cat ID is specified in the URL   
+
 > Returns: ID of deleted cat
 
-Example Request Endpoint: DELETE https://www.catfarm.com/api/cat/1
-JSON Body: N/A
+- Example Request Endpoint: DELETE https://www.catfarm.com/api/cat/1
+- JSON Body: N/A
 
 Example Response:
 ```
 	1
 ```
 
-##Update Cat
+## Update Cat
+
 > Purpose: Edit a Cat Record
+>
 > Resource URL: https://www.catfarm.com/api/cat/{ID}
+>
 > Parameters: 
-> 	The cat ID is specified in the URL
+>
+> The cat ID is specified in the URL
 > 
 >  name: "id"
 >  type: integer
@@ -146,7 +175,7 @@ Example Response:
    }
 ```	
 
-##Feed Cat
+## Feed Cat
 > Purpose: Record meal details for a cat
 > Resource URL: https://www.catfarm.com/api/feed/{ID}
 > Parameters: 
