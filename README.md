@@ -112,7 +112,7 @@ Example Response:
 	[
 	   {
 		  "id": 3,
-		  "name": "New Cat",
+		  "name": "Abby",
 		  "created_at": 2019-10-03 03:18:00,
 		  "updated_at": "2019-10-03 03:36:06"
 	   }
